@@ -1,0 +1,241 @@
+.g21-2-column-block {
+    display: flex;
+    width: 100%;
+    height: 914px;
+    margin: 60px auto;
+}
+
+.g21-2-column-block-image {
+    height: 790px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e4e4e4;
+}
+
+.g21-2-column-block-text.column-right {
+    padding: 0px 0px 0 85px;
+    width: 831px;
+}
+
+.g21-2-column-block-header-title {
+    width: 500px;
+    height: 100px;
+}
+
+.cta-header {
+    width: 500px;
+    height: 100px;
+    font-size: 50px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    margin: 0;
+}
+
+.cta-title {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: left;
+    line-height: 28px;
+    margin: 24px 0 8px 0;
+}
+
+.cta-description {
+    width: 200px;
+    line-height: 1.4;
+}
+
+.box.top-row {
+    margin: 72px 0 0 0;
+}
+
+.box.bottom-row {
+    margin: 29px 0 0 0;
+}
+
+.grid2x2 {
+    min-height: 63%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.grid2x2 > div {
+    display: flex; 
+    flex-basis: calc(50% - 0px);  
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .grid2x2 > div > div {
+    display: flex;
+    flex-direction: row;
+    width: 235px;
+  }
+
+  @media(max-width: 813px) {
+    .g21-2-column-block {
+        display: initial;
+        width: 100%;
+        height: initial;
+        margin: 60px auto;
+    }
+    
+    .g21-2-column-block-text.column-right {
+        width: 100%;
+        padding: 15px 35px;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .g21-2-column-block-image {
+        width: 100%;
+    }
+    
+    .g21-2-column-block-header-title {
+        height: 100px;
+        width: 100%;
+    }
+    
+    .cta-header {
+        width: 100%;
+        font-size: 50px;
+        margin: 25px 0;
+    }
+
+    .grid2x2 {
+        /* min-height: 70%; */
+        display: initial;
+        width: 100%;
+    }
+    
+    .grid2x2 > div {
+        display: block;
+        text-align: left;
+    }
+    
+    .cta-description {
+        width: initial;
+    }
+}
+
+@media (max-width: 616px) {
+    .cta-header {
+        font-size: 40px;
+        }
+    }
+
+@media(max-width: 414px) {
+    .g21-2-column-block {
+        display: initial;
+        width: 100%;
+        height: initial;
+        margin: 60px auto;
+    }
+    
+    .g21-2-column-block-text.column-right {
+        width: 100%;
+        padding: 15px 35px;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .g21-2-column-block-image {
+        width: 100%;
+        height: initial;
+    }
+    
+    .g21-2-column-block-header-title {
+        height: 100px;
+        width: 100%;
+    }
+    
+    .cta-header {
+        width: 100%;
+        font-size: 35px;
+        margin: 25px 0;
+    }
+    
+    .grid2x2 {
+        display: initial;
+        width: 100%;
+    }
+
+    .cta-description {
+        width: initial;
+    }
+}
+
+@media (max-width: 375px) {
+
+.cta-header {
+    font-size: 30px;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .cta-header {
+        font-size: 26px;
+    }
+
+    .cta-title {
+        font-size: 23px;
+    }
+}
+@media(max-width: 414px) {
+    
+    .g21-2-column-block {
+        display: initial;
+        width: 100%;
+        height: initial;
+        margin: 60px auto;
+    }
+    
+    .g21-2-column-block-text.column-right {
+        width: 100%;
+        padding: 15px 35px;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .g21-2-column-block-image {
+        width: 100%;
+        height: initial;
+    }
+    
+    .g21-2-column-block-header-title {
+        height: 100px;
+        width: 100%;
+    }
+    
+    .cta-header {
+        width: 100%;        
+        margin: 25px 0;
+    }
+    
+    .grid2x2 {
+        display: initial;
+        width: 100%;
+    }
+    
+    .grid2x2 > div {
+        display: flex;
+        justify-content: center;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        align-items: center;
+    }
+  }

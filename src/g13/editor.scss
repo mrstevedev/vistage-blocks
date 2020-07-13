@@ -1,0 +1,198 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+.wp-block-cgb-block-g1-3-full-width-image-text  {
+  background: white;
+  color: black;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 576px;
+  padding: 2rem 0rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.component-container {
+  width: 100%;
+}
+
+.component-top-label-line {
+  text-transform: uppercase;
+  color: white;
+}
+
+.component-title {
+  font-size: 36px;
+  font-family: sofia-pro, sans-serif;
+  text-align: left;
+  width: 100%;
+  line-height: normal;
+  font-weight: bold;
+}
+
+.component-description-text {
+  width: 570px;
+  line-height: 28px;
+  font-size: 20px;
+}
+
+.component-cta.btn {
+  width:  260px;
+  min-height: 68px;
+  height: auto;
+  border-radius: 1px;
+  background: white;
+  font-size: 18px;
+  color: black;
+  text-transform: initial;
+  text-align: left;
+  padding: 1.5rem 3.2rem;
+  margin: 0 0 16px 0;
+  border: none;
+  border-bottom: solid 4px themeColor('components', 'button');
+
+
+  // &:hover {
+  //   background: themeColor('vistage');
+  //   color:white;
+  // }
+}
+
+.editor-url-input.block-editor-url-input.component-url-input input {
+  width: 100%;
+}
+
+// .component-cta-text {
+//   overflow: hidden;
+//   height: 51px;
+// }
+
+.component-cta-link {
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  display: inline-block;
+  
+  p {
+    margin: 0;
+    position: relative;
+  }
+}
+
+.component-cta-link a {
+  text-decoration: none;
+  color: white;
+}
+
+.component-cta-link svg {
+  position: absolute;
+  right: -30px;
+  top: 13px;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.component-cta-link:hover svg {
+  transform: translate3d(5px, 0, 0);
+}
+
+.component-cta-bg {
+  background: themeColor('vistage');
+  width: 653px;
+  min-height: 456px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.component-cta-bg.no-bg {
+  background: transparent;
+}
+
+.left {
+    display: flex;
+  	justify-content: flex-start;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.choose-image-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#inspector-text-control-0::placeholder {
+  color: #ccc;
+}
+
+/* Chevron Styles */
+
+.chevron {
+  width: 48%;
+  text-align: right;
+  display: inline-block;
+  padding: 0 0rem 0 0;
+
+  &:Before {
+    border-style: solid;
+    border-width: 0.11em 0.11em 0 0;
+    content: '';
+    display: inline-block;
+    height: 0.43em;
+    left: 0.15em;
+    position: relative;
+    top: 0.48em;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    vertical-align: top;
+    width: 0.43em;
+  }
+}
+
+.chevron.right:before {
+	left: 0;
+	transform: rotate(45deg);
+}
+
+/* End Chevron Styles */
+
+
+.label-media-btn {
+  font-size: 13px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* Image Button */
+
+.choose-another-image-button-container {
+  width: 100%;
+  margin: -3px 3.6rem;
+  height: 100%;
+  display: flex;
+  /* justify-content: flex-end; */
+}
+
+.components-button.button.button-large {
+  background: #ffffff;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  box-shadow: 0px 1px 2px #cacaca;
+}
+
+/* End Image Button */

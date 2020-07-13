@@ -1,0 +1,279 @@
+.button__global {
+	background: themeColor('vistage');
+	border-color: themeColor('vistage');
+	border-radius: 2px;
+	border-style: solid;
+	border-width: 2px;
+	color: white;
+	cursor: pointer;
+	font-size: 1.4rem;
+	font-weight: 600;
+	height: 4rem;
+	min-width: 12rem;
+	padding: 0 1.6rem;
+	text-align: center;
+	transition: all 0.3s ease;
+
+	a {
+		align-items: center;
+		display: flex;
+		height: 100%;
+		text-decoration: none;
+	}
+
+	&:focus {
+		border-color: themeColor('vistage', 'bright-blue');
+	}
+
+	&:hover {
+		background: white;
+		color: themeColor('vistage');
+
+		a {
+			color: themeColor('vistage');
+		}
+	}
+
+	&[disabled] {
+		background-color: themeColor('grayscale', 'medium-gray');
+		border-color: themeColor('grayscale', 'medium-gray');
+		color: themeColor('grayscale', 'light-gray');
+		cursor: not-allowed;
+		pointer-events: none;
+	}
+
+	&.--secondary {
+		background: white;
+		color: themeColor('vistage');
+
+		&[disabled] {
+			background: white;
+			border-color: themeColor('grayscale', 'medium-gray');
+			color: themeColor('grayscale', 'medium-gray');
+		}
+
+		&:hover {
+			background: themeColor('vistage');
+			color: white;
+
+			a {
+				color: white;
+			}
+		}
+	}
+
+	&.--centered {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.button__cta {
+	align-items: center;
+	background: themeColor('vistage');
+	border-color: themeColor('vistage');
+	color: white;
+	cursor: pointer;
+	display: flex;
+	font-size: 1.8rem;
+	font-weight: bold;
+	height: 6.8rem;
+	justify-content: space-between;
+	min-width: 26rem;
+	outline: none;
+	padding-left: 3.2rem;
+	position: relative;
+	text-align: left;
+
+	&:visited {
+		color: white;
+	}
+
+	&::after {
+		content: '>';
+		display: block;
+		width: 7px;
+		height: 13px;
+		margin: 0 3.2rem;
+		align-self: center;
+	}
+
+	&:hover {
+		background: white;
+		color: themeColor('vistage');
+	}
+
+	&:focus {
+		border-color: themeColor('vistage', 'bright-blue');
+	}
+
+	&.--secondary {
+		background: white;
+		color: themeColor('vistage');
+
+		&:hover {
+			background: themeColor('vistage');
+			color: white;
+		}
+	}
+
+	&.--navigation {
+		background: themeColor('components', 'button');
+		border: 2px solid themeColor('components', 'button');
+		color: themeColor('vistage');
+		height: 5.3rem;
+
+		&::after {
+			display: none;
+		}
+
+		&:focus {
+			border-color: themeColor('vistage');
+		}
+
+		&:hover {
+			color: white;
+		}
+	}
+
+	&.--hero {
+		background: white;
+		border: 0;
+		border-bottom: 4px solid themeColor('components', 'button');
+		color: themeColor('vistage');
+
+		&:hover {
+			background: themeColor('vistage');
+			color: white;
+		}
+	}
+}
+
+.button__search {
+	background: themeColor('vistage', 'blue-steel');
+	border-color: themeColor('vistage', 'blue-steel');
+	border-width: 1px;
+	color: themeColor('vistage');
+	min-width: 0;
+
+	&:focus {
+		border-color: themeColor('vistage', 'bright-blue');
+	}
+
+	&:hover {
+		background: themeColor('vistage', 'blue-steel');
+		border-color: themeColor('vistage');
+	}
+
+	&.--active {
+		background: themeColor('vistage', 'bright-blue');
+		color: white;
+	}
+}
+
+.button__input {
+	align-items: center;
+	border-radius: 0 4px 4px 0;
+	display: flex;
+	font-size: 1.8rem;
+	height: 6rem;
+	justify-content: center;
+	min-width: 0;
+	padding: 20px;
+
+	&:hover {
+		background: themeColor('vistage');
+		color: themeColor('components', 'button');
+	}
+
+	&.--secondary {
+		background: themeColor('components', 'button');
+		border-color:  themeColor('components', 'button');
+		color: themeColor('grayscale', 'black');
+
+		&:focus {
+			border-color: themeColor('vistage', 'bright-blue');
+		}
+
+		&:hover {
+			background: themeColor('components', 'button');
+			color: themeColor('grayscale', 'black');
+		}
+	}
+}
+
+.button__pagination {
+	background: darken( themeColor('grayscale', 'light-gray'), 10% );
+	border-color: darken( themeColor('grayscale', 'light-gray'), 10% );
+	border-radius: 50%;
+	height: 4.6rem;
+	min-width: 0;
+	width: 4.6rem;
+
+	&:hover {
+		background: themeColor('grayscale', 'medium-gray');
+		border-color: themeColor('grayscale', 'medium-gray');
+	}
+
+	&[disabled] {
+		background: themeColor('grayscale', 'light-gray');
+		border-color: themeColor('grayscale', 'light-gray');
+		color: themeColor('grayscale', 'medium-gray');
+	}
+}
+
+.button__play {
+	height: 9.3rem;
+	width: 9.3rem;
+
+	svg {
+		cursor: pointer;
+		filter: drop-shadow( 0 0 2px rgba(0, 0, 0, .5) );
+		height: auto;
+		width: 100%;
+
+		circle {
+			fill: transparent;
+			stroke: white;
+			stroke-width: 2;
+			transition: stroke-width 0.3s ease;
+		}
+
+		path {
+			fill: white;
+		}
+
+		&:hover {
+			circle {
+				stroke-width: 4;
+			}
+		}
+	}
+
+	&.--secondary {
+		height: 5.2rem;
+		width: 5.2rem;
+	}
+}
+
+.button__dropdown {
+	background: white;
+	border-color: themeColor('vistage');
+	border-radius: 4px;
+	border-width: 1px;
+	color: themeColor('vistage');
+	font-size: 1.8rem;
+	font-weight: 600;
+	height: 6rem;
+	width: 26rem;
+
+	+ .dropdown-menu {
+		border-color: themeColor('vistage', 'blue-steel');
+		width: 26rem;
+
+		ul {
+			padding: 0;
+			margin: 0;
+		}
+	}
+}

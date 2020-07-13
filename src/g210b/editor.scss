@@ -1,0 +1,46 @@
+.g210b__container {
+	.wrapper {
+		width: 100%;
+		display: flex;
+	}
+    .g210b {
+        &__text {
+			max-width: 35%;
+            textarea,
+            input[type="text"] {
+				background-color: transparent;
+				border: 0;
+            }
+
+            &__heading textarea {
+                font-size: 5rem;
+                font-weight: 500;
+			}
+			
+			.button__cta {
+				input {
+					color: white;
+				}
+
+				&:hover input {
+					color: black;
+				}
+			}
+        }
+        &__image {
+			right: 0;
+			left: auto;
+			top: 0;
+			margin-top: 0;
+			max-width: 50%;
+			overflow-x: hidden;
+
+            .editor-rich-text {
+                display: none;
+            }
+            .editor-block-list__block-edit {
+                margin-bottom: 0;
+            }
+        }
+    } 
+}

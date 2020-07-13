@@ -1,0 +1,31 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+.wp-block[data-type*=card-block] {
+
+	--margin: 1.65rem;
+	--modifier: calc( 80rem - 100% );
+
+	.card-edit-container {
+		display: flex;
+	}
+
+	.card-edit__card {
+		border: 2px solid #ccc;
+		border-radius: 4px;
+		flex-grow: 1;
+		flex-basis: calc( var(--modifier) * 999 );
+		min-width: calc(33% - (var(--margin) * 2));
+		margin: var(--margin);
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+}

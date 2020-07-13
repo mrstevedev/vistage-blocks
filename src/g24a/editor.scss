@@ -1,0 +1,36 @@
+.g24a__container {
+    .g24a {
+        &__left {
+            &__heading textarea {
+                background-color: transparent;
+            }
+            figure {
+                .editor-rich-text {
+                    display: none;
+                }
+                .wp-block-embed__wrapper:before {
+                    padding-top: 56.25%;
+                }
+            }
+        }
+        &__right {
+            &__description textarea,
+            &__cta-button input {
+                background-color: transparent;
+            }
+            &__cta-button {
+                background-color: #003f5f;
+                input,
+                input:focus {
+                    color: white;
+                }
+                &:hover {
+                    background-color: #003f5f;
+                    input {
+                        border-color: #0079b6;
+                    }
+                }
+            }
+        }
+    } 
+}

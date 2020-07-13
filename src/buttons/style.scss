@@ -1,0 +1,34 @@
+.wp-block-vistage-blocks-button-block {
+
+	&.container {
+
+		> div {
+			display: flex;
+		}
+
+		.align-left {
+			justify-content: left;
+		}
+
+		.align-center {
+			justify-content: center;
+		}
+
+		.align-right {
+			justify-content: right;
+		}
+	}
+
+	.button__global,
+	.button__cta {
+		a {
+			color: white;
+		}
+
+		&.--secondary {
+			a {
+				color: themeColor('vistage')
+			}
+		}
+	}
+}

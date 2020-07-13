@@ -1,0 +1,77 @@
+.g12__container { 
+    .g12 {
+        &__text-container {
+
+            transition: transform 1s;
+            background-color: lightgray;
+
+            input[type="text"],
+            textarea {
+                background-color: transparent;
+            }
+            &.g12__over-image {
+				background-color: transparent;
+				padding: 0 3rem;
+
+                input[type="text"],
+                textarea {
+                    color: white;
+				}
+				
+				.g12__text-container__cta-button {
+					input {
+						color: themeColor('vistage');
+					}
+
+					&:hover {
+						input {
+							color: white;
+						}
+					}
+				}
+            }
+            &__label {
+				max-width: 90%;
+                input[type="text"] {
+                    font-size: 2rem;
+                }
+            }
+            &__heading {
+				color: white;
+				font-size: 2rem;
+            }
+            &__subheading {
+                input[type="text"] {
+                    font-size: 1rem;
+                }
+            }
+            &__cta-button {
+                .components-base-control {
+                    display: inline-block;
+				}
+
+				&:hover {
+					input {
+						color: white;
+					}
+				}
+            }
+        }
+        &__image {
+            .editor-rich-text {
+                display: none;
+            }
+            .editor-block-toolbar {
+                .components-toolbar {
+                    display: none;
+                }
+                .components-toolbar:nth-child(3) {
+                    display: flex;
+                }
+            }
+        }
+    } 
+}
+div.editor-url-input > input[type="text"] {
+    width: 100%;
+}

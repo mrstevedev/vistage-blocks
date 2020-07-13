@@ -1,0 +1,21 @@
+.g16 {
+	&__questions {
+		&__item {
+			&__answer {
+				display: block;
+			}
+			&__question {
+				position: relative;
+				.cross-icon,
+				.cross-icon-open {
+					position: absolute;
+					left: -5rem;
+					top: 0;
+				}
+				.cross-icon-open {
+					display: none;
+				}
+			}
+		}
+	}
+}

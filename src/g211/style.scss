@@ -1,0 +1,157 @@
+.wp-block-vistage-blocks-g211-numbered-list {
+	width: 100%;
+	height: 576px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.wp-block-vistage-blocks-g211-numbered-list-inside-list {
+		width: 1130px;
+		height: 456px;
+		margin: 0 auto;
+		padding: 1.5em 4em;
+		color: #fff;
+	}
+	
+	.wp-block-vistage-blocks-g211-numbered-list-main-cta {
+		font-size: 36px;
+		color: #fff;
+		margin: 0;
+	}
+	
+	.wp-block-vistage-blocks-g211-numbered-list-list-container {
+		padding: 0 3em;
+	}
+	
+	ol.wp-block-vistage-blocks-g211-numbered-list-orderd-list.numberlist {
+		column-count: 2;
+		column-fill: auto;
+		height: 360px;
+		column-gap: 150px;
+		list-style-type: none;		 
+	}
+
+	ol.wp-block-vistage-blocks-g211-numbered-list-orderd-list.numberlist li {
+		padding: 0.7em 1em;
+		width: 342px;
+		height: 95px;
+		line-height: 28px;
+
+		margin: 0 0 0.5rem 0;
+		counter-increment: challenge-solution-counter;
+		position: relative;
+		font-size: 17px;			
+	}
+
+	.numberlist li::before {
+		content: counter(challenge-solution-counter);
+		color: #003f5f;
+		font-size: 36px;
+		font-weight: 500;
+		position: absolute;
+		--size: 60px;
+		left: calc(-1 * var(--size) - 1px);
+		line-height: var(--size);
+		width: var(--size);
+		height: var(--size);
+		top: .5em;
+		background: #fff;
+		border-radius: 50%;
+		text-align: center;
+	}
+
+	ol.wp-block-vistage-blocks-g211-numbered-list-orderd-list.checklist {
+		column-count: 2;
+		column-fill: auto;
+		height: 360px;
+		column-gap: 150px;
+		list-style-type: none;	
+	}
+
+	ol.wp-block-vistage-blocks-g211-numbered-list-orderd-list.checklist li {
+		padding: 0.7em 1em;
+		width: 342px;
+		height: 95px;
+		line-height: 28px;
+	
+		margin: 0 0 0.5rem 0;
+		counter-increment: challenge-solution-counter;
+		position: relative;
+		font-size: 17px;			
+	}
+	
+	ol.wp-block-vistage-blocks-g211-numbered-list-orderd-list.checklist li::before {
+		content: '';
+		display: inline-block;
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg);
+		width: 7px;
+		height: 12px;
+		border-width: 0 0px 0 0;
+		border-bottom: 2px solid #e2e2e2;
+		border-right: 2px solid #e2e2e2;
+		margin: 1.1em -1.6em;
+		position: absolute;
+		top: 0;
+	}
+}
+
+@include media('<=tablet') {
+	.wp-block-vistage-blocks-g211-numbered-list-list-container {
+		padding: 0 2em!important;
+
+		ol li {
+			padding: 1.5em 0em 0 1em!important;
+			width: initial!important;
+			line-height: 28px!important;
+			font-size: 15px!important;
+	
+			&::before {
+				font-size: 26px!important;
+				--size: 50px!important;				
+			}
+		}
+	}
+
+	.wp-block-vistage-blocks-g211-numbered-list {
+		height: initial!important;
+	}
+
+	.wp-block-vistage-blocks-g211-numbered-list-inside-list {
+		width: 100%!important;
+		height: 90%!important;
+		padding: 1em 0 3em 0!important;
+	}
+
+	.wp-block-vistage-blocks-g211-numbered-list-orderd-list {
+		height: initial!important;
+		column-count: initial!important;
+	}
+
+	.wp-block-vistage-blocks-g211-numbered-list-main-cta {
+		font-size: 1.8em!important;
+		margin: 0.6em!important;
+	}
+}
+
+@include media('<=phone') {
+	.wp-block-vistage-blocks-g211-numbered-list-list-container {
+		padding: 0 1em!important;
+		
+
+		ol li {
+			font-size: 14px!important;
+			padding: 0.4em 0em 0 1em!important;
+		}
+
+		ol li::before {
+			font-size: 1.4rem;
+			--size: 40px!important;
+			left: calc(-1 * var(--size) - 1px);
+			line-height: var(--size);
+			width: var(--size);
+			height: var(--size);
+		}
+	}
+}

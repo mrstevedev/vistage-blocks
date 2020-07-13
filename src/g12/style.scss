@@ -1,0 +1,144 @@
+.g12 {
+    &__container {
+        position: relative;
+    }
+    &__text-container {
+
+        width:100%;
+        padding: 2rem;
+        color: white;
+        position: relative;
+		
+        &.g12__over-image {
+            position: absolute;
+            z-index: 2;
+			top: 50%;
+			left: 50%;
+			transform: translateY(-50%) translateX(-50%);
+			max-width: 130rem;
+        }
+        &__label h1 {
+            font-weight: 600;
+            font-size: 2rem;
+			margin-bottom: 2.4em;
+			color: white;
+        }
+        &__heading h2 {
+            font-weight: 500;
+            font-size: 7.2rem;
+			margin-bottom: 4rem;
+			margin-top: 0;
+			color: white;
+            text-transform: none;
+            width: 945px;
+
+			@include media('<=tablet') {
+				font-size: 4rem;
+			}
+        }
+        &__subheading {
+            font-weight: bold;
+			font-size: 2.4rem;
+			line-height: 2.8rem;
+            margin-bottom: 4rem;
+            width: 840px;
+
+			@include media('<=tablet') {
+				font-size: 2rem;
+			}
+        }
+        &__cta-button {
+
+            background-color: white;
+            border-radius: 1px;
+            border: none;
+            border-bottom: 4px solid #edc11c;
+            color: black;
+            font-weight: bold;
+            min-width: 260px;
+            font-size: 0.8em;
+            height: 68px;
+            text-align: left;
+            padding: 0 1.6em;
+            font-family: inherit;
+
+            svg {
+                display: block;
+                float: right;
+                margin-top: 4px;
+            }
+            &:hover {
+                background-color: #003f5f;
+                color: white;
+                svg path {
+                    fill: white;
+                }
+            }
+		}
+		
+		@include media('<=tablet') {
+			br {
+				display: none;
+            }
+            &__heading h2 {
+                width: initial;
+            }
+            &__subheading {
+                width: initial;
+            }
+		}
+    }
+    &__image {
+
+        white-space: nowrap;
+        position: relative;
+		z-index: 1;
+		max-height: 64rem;
+        overflow: hidden;
+
+        .wp-block-cover, 
+        .wp-block-cover-image {
+            min-height: 64rem;
+        }
+
+        .has-transparent-background-color {
+            background-color: transparent;
+        }
+        
+        .has-vistage-blue-background-color {
+            background-color: #003f5f;
+        }
+        
+        .has-vistage-black-background-color {
+            background-color: #000000;
+        }
+
+		.tall & {
+			max-height: 86.6rem;
+		}
+
+        figure {
+			margin: 0;
+
+			@include media('<=tablet') {
+                position: relative;
+                overflow: hidden;
+                min-height: 450px;
+			}
+
+            &.wp-block-image img {
+				display:block;
+				
+				@include media('<=tablet') {
+					min-height: 450px;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    max-width: none;
+					width: auto;
+					max-height: none;
+				}
+            }
+        }
+    }
+}

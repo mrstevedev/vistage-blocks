@@ -1,0 +1,42 @@
+// ============================================================================
+// THEME COLORS
+// ============================================================================
+
+// ----------------------------------------------------------------------------
+//
+// All colors should be added and controlled here. Base values for each map are
+// treated as defaults if a secondary tone is not specified.
+//
+// Usage:
+// .header {
+//      background-color: themeColor("vistage");
+// }
+//
+// .action-button {
+//      backrgound-color: themeColor("vistage", "bright-blue");
+// }
+//
+// ----------------------------------------------------------------------------
+
+$colors: (
+	vistage: (
+		base: rgb(0, 63, 95),
+		bright-blue: rgb(0, 121, 182),
+		navy-blue: rgb(0, 34, 61),
+		light-blue: rgba(0, 121, 182, 0.15),
+		blue-steel: rgba(0, 63, 95, 0.1)
+	),
+	components: (
+		base: rgb(50, 50, 50),
+		button: rgb(237, 193, 28)
+	),
+	grayscale: (
+		base: rgb(52, 52, 52),
+		medium-gray: rgb(165, 165, 165),
+		light-gray: rgb(236, 236, 236)
+	),
+);
+
+@function themeColor($color, $tone: "base") {
+	@return map-get(map-get($colors, $color), $tone);
+}

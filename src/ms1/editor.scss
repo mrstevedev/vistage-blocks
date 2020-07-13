@@ -1,0 +1,118 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+ .wp-block-cgb-block-g51-1-column-testimonial-block  {
+    background: #fff;
+    color: #000;
+    margin: 0 auto;
+    padding: 35px 0 0 0;
+    max-width: 1140px;
+    // height: 564px;
+    padding: 0rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4px;
+    border: solid 2px #e5ebef;
+	text-align: center;
+	
+
+	h2 {
+		text-align: center;
+	}
+  }
+  
+  .wp-block-cgb-block-g51-1-column-testimonial-block img {
+    border-radius: 4px; 
+    background:#ccc; 
+    width: 98px; 
+    height: 98px; 
+  }
+  .wp-block-cgb-block-g51-1-column-testimonial-block h1.member-story-name {
+    font-size: 24px;
+    color: #000;
+    line-height: 28px;
+  }
+  
+  .wp-block-cgb-block-g51-1-column-testimonial-block h2::after {
+    content: '';
+    width: 61px;
+    height: 2px;
+    background: #edc11c;
+    display: block;
+    margin: 13px auto;
+  }
+  
+  .wp-block-cgb-block-g51-1-column-testimonial-block h4 {
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .wp-block-cgb-block-g51-1-column-testimonial-block p:nth-child(4) {
+    font-size: 24px;
+    text-align: center;
+    line-height: 32px;
+    max-width: 791px;
+    margin: 32px auto 0;
+  }
+
+  .block-container p:nth-child(2) {
+    font-weight: bold;
+}
+  
+  .wp-block-cgb-block-g51-1-column-testimonial-block 
+  .vdc24__testimonial-icon,
+  .vdc24__story-icon,
+  .vdc24__video-icon  {
+    display: block;
+    margin: auto;
+    position: absolute;
+    bottom: -29px;
+    left: 0;
+    right: 0;
+  }
+  
+  @media(max-width: 643px) {
+    .wp-block-cgb-block-g51-1-column-testimonial-block p {
+      font-size: 18px;
+    }
+  }
+  
+  @media(max-width: 480px) {
+    .wp-block-cgb-block-g51-1-column-testimonial-block p {
+      font-size: 14px;
+      line-height: 25px;
+    }
+    
+    .wp-block-cgb-block-g51-1-column-testimonial-block {
+      padding: 2.8rem 2rem;
+    }
+  }
+  
+  @media(max-width: 460px) {
+    .wp-block-cgb-block-g51-1-column-testimonial-block p {
+      font-size: 16px;
+      line-height: 25px;
+    }
+  }
+  
+  @media (max-width: 380px) {
+    .wp-block-cgb-block-g51-1-column-testimonial-block p {
+      font-size: 12px;
+      line-height: 23px;
+    }
+  }
+
+
+  // Block Styles //
+  .block-content p:nth-child(2), .block-content p:nth-child(3) {
+      color: blue;
+  }
+
+  .wp-block-column:not(:first-child) {
+    margin-left: 0;
+}

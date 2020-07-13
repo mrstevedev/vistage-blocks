@@ -1,0 +1,81 @@
+.g27__container {
+	display: flex;
+	position: relative;
+	max-width: 1140px;
+	margin: 0 auto;
+
+	.g27__image {
+		width: 55.4rem;
+
+		figure.wp-block-image {
+			display: flex;
+			position: relative;
+			z-index: 10;
+			margin: 0;
+			height: calc(100% - 26rem);
+			top: 13rem;
+			overflow: hidden;
+
+			img {
+				object-fit: cover;
+				object-position: top;
+			}
+		}
+	}
+
+	.g27__text {
+
+		&.--wrapper {
+			width: 65.4rem;
+			text-align: left;
+			padding: 13rem;
+			padding-right: 10.6rem;
+			background: attr(data-background);
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			transform: translateX(-5rem);
+			font-size: 2rem;
+			margin-right: -5rem;
+
+			a {
+				text-decoration: none;
+				font-weight: bold;
+				color: black;
+			}
+		}
+		
+		&.--label {
+			font-size: 1.4rem;
+			font-weight: bold;
+			margin-bottom: 2.2rem;
+			text-transform: uppercase;
+		}
+
+		&.--heading {
+			font-size: 3.6rem;
+			font-weight: 500;
+			line-height: 4rem;
+			margin-bottom: 1.4rem;
+		}
+
+		&.--description {
+			margin-bottom: 2rem;
+		}
+
+		&.--linktext {
+			font-size: 2rem;
+			font-weight: bold;
+			margin-top: 2rem;
+			text-decoration: none;
+		}
+	}
+
+	&.--layout-right {
+		.g27__text.--wrapper {
+			transform: translateX(0);
+			padding: 13rem;
+			padding-left: 10.6rem;
+		}
+	}
+}

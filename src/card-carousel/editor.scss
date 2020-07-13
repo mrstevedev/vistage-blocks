@@ -1,0 +1,126 @@
+.card-carousel {
+	&__heading input.components-text-control__input {
+		font-size: 5rem;
+	}
+    &__cards {
+		overflow-x: scroll;
+		overflow-y: visible;
+		div.editor-block-list__block.block-editor-block-list__block {
+			position: relative;
+			div.editor-block-list__block-edit.block-editor-block-list__block-edit {
+				height: 100%;
+			}
+		}
+		&.hide-image {
+			.card-carousel-card__image {
+				display: none;
+			}
+		}
+		&.hide-heading {
+			.card-carousel-card__heading {
+				display: none;
+			}
+		}
+		&.hide-description {
+			.card-carousel-card__description {
+				display: none;
+			}
+		}
+        > .block-editor-inner-blocks > .block-editor-block-list__layout {
+            margin: 0 1.4rem 2.8rem 1.4rem;
+			display: flex;
+			width: 333%;
+		}
+		> div > div >.block-editor-block-list__block {
+			border-radius: 6px;
+            border: solid 2px #f2f1f1;
+            margin: 0 1.4rem;
+		}
+		&__3-cards {
+			> .block-editor-inner-blocks > .block-editor-block-list__layout {
+				width: 100%;
+			}
+		}
+		&__4-cards {
+			> .block-editor-inner-blocks > .block-editor-block-list__layout {
+				width: 133%;
+			}
+		}
+		&__5-cards {
+			> .block-editor-inner-blocks > .block-editor-block-list__layout {
+				width: 167%;
+			}
+		}
+		&__6-cards {
+			> .block-editor-inner-blocks > .block-editor-block-list__layout {
+				width: 200%;
+			}
+		}
+		&__7-cards {
+			> .block-editor-inner-blocks > .block-editor-block-list__layout {
+				width: 233%;
+			}
+		}
+		&__8-cards {
+			> .block-editor-inner-blocks > .block-editor-block-list__layout {
+				width: 266%;
+			}
+		}
+		&__9-cards {
+			> .block-editor-inner-blocks > .block-editor-block-list__layout {
+				width: 300%;
+			}
+		}
+		.iconset__icon {
+			bottom: 0;
+			position: absolute;
+			display: inline-block;
+			margin: 0;
+			left: 50%;
+			transform: translate( -50%, 50%);
+		}
+		&__card {
+			&__image {
+				.block-editor-block-list__block-edit {
+					margin-bottom: 0;
+				}
+				.editor-block-toolbar {
+					.components-toolbar {
+						display: none;
+					}
+					.components-toolbar:nth-child(3) {
+						display: flex;
+						transform: translateX(125%);
+					}
+				}
+				figure.wp-block-image {
+					.block-editor-rich-text {
+						display: none;
+					}
+				}
+				.block-editor-block-list__block[data-align=full] {
+					margin-left: 0;
+					margin-right: 0;
+				}
+			}
+		}
+	}
+	&__need-refresh {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 121, 182, 1);
+		top: 0;
+		left: 0;
+		text-align: center;
+		z-index: 100;
+		opacity: 0.9;
+		h2 {
+			position: absolute;
+			top: 50%;
+			text-align: center;
+			width: 100%;
+			transform: translateY(-50%);
+		}
+	}
+}

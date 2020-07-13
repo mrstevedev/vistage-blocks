@@ -1,0 +1,52 @@
+.g41 {
+	&__container {
+		padding: 1rem;
+	}
+
+    &__heading input,
+    &__stats textarea,
+    &__stats input {
+
+        background-color: transparent;
+        color: inherit ! important;
+
+        &:focus,
+        &::placeholder {
+            color: inherit ! important;
+        }
+    }
+    &__heading {
+		margin-bottom: 2rem;
+		input {
+			font-size: 5rem;
+			line-height: 5rem;
+			margin: 0;
+		}
+	}
+    &__stats {
+        &__number input {
+            font-size: 4.2rem;
+        }
+        &__label input {
+            font-size: 2rem;
+            line-height: 2.8rem;
+        }
+    }
+    &__controls {
+        &__color-picker {
+            .components-color-picker {
+                &__inputs-toggle {
+                    display: none;
+                }
+                &__saturation {
+                    margin-top: 1rem;
+                }
+            }
+
+        }
+    }
+}
+span.component-color-indicator {
+    vertical-align: text-bottom;
+    margin-left: 0;
+}

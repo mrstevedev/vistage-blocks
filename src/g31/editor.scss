@@ -1,0 +1,15 @@
+.g31 {
+    &__heading div div input {
+		font-size: 5rem;
+	}
+	&__cards {
+		&__card {
+			&__cta-button {
+				display: flex;
+				svg {
+					margin-top: 0.8rem;
+				}
+			}
+		}
+	}
+}

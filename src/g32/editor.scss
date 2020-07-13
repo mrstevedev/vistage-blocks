@@ -1,0 +1,35 @@
+.g32 {
+	&__container {
+		input {
+			background-color: transparent;
+			color: inherit;
+
+			&::placeholder,
+			&:focus {
+				color: inherit;
+			}
+		}
+	}
+	&__filters {
+		&__category,
+		&__content-type {
+			&__toggle-button {
+				border: 2px solid #003f5f;
+				cursor: pointer;
+			}
+		}
+	}
+	&__heading input {
+		font-size: 5rem;
+	}
+	&__footer {
+		&__cta-button {
+			border: 2px solid #003f5f;
+			cursor: pointer;
+
+			input:focus {
+				color: white;
+			}
+		}
+	}
+}

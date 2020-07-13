@@ -1,0 +1,52 @@
+.hp2__container {
+    margin-top: 5em;
+    .editor-block-toolbar {
+        .components-toolbar {
+            display: none;
+        }
+        .components-toolbar:nth-child(3) {
+            display: flex;
+        }
+    }
+    .hp2 {
+        &__left {
+            &__heading textarea {
+                font-size: 1em;
+                line-height: 120%;
+            }
+            &__description textarea {
+                font-size: 1.2em;
+            }
+            figure {
+                .editor-rich-text {
+                    display: none;
+                }
+                .wp-block-embed__wrapper:before {
+                    padding-top: 56.25%;
+                }
+            }
+        }
+        &__right {
+            &__label {
+                display: inline-block;
+                input {
+                    background-color: transparent;
+                    color: white;
+                    &:focus {
+                        color: white;
+                    }
+                }
+            }
+            .components-text-control__input {
+                width: 140px;
+            }
+            &__gf-container {
+                .gform_wrapper {
+                    .gform_validation_container, .gf_hidden, .gform_hidden, input.gform_hidden, input[type=hidden] {
+                        display: none !important;
+                    }
+                }
+            }
+        }
+    } 
+}

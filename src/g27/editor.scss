@@ -1,0 +1,32 @@
+.g27__container {
+	display: flex;
+
+	.g27__text{
+		&.--wrapper {
+			padding: 5rem 13rem 5rem 8rem;
+
+			&:first-child {
+				margin-left: 0;
+				left: 0;
+				transform: none;
+				padding: 5rem 8rem 5rem 5rem;
+			}
+		}
+		&.--label {
+			margin: 0;
+		}
+	}
+
+	.g27__image {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		figure.wp-block-image {
+			top: 0;
+			.editor-rich-text {
+				display: none;
+			}
+		}
+	}
+}

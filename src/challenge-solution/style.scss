@@ -1,0 +1,136 @@
+.challenge-solution {
+	&__container {
+		position: relative;
+		padding: 6rem 15rem;
+		overflow: hidden;
+		background-size: cover;
+		background-position: center;
+	}
+	&__content {
+		left: 0;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+		margin: 0;
+		padding: 3rem 4rem;
+		color: white;
+		&__heading {
+			text-transform: none;
+			margin-top: 0;
+			margin-bottom: 3.2rem;
+			font-size: 3.6rem;
+			line-height: normal;
+			color: inherit;
+			font-weight: 500;
+		}
+		&__items {
+			&__item {
+				display: flex;
+				font-size: 2rem;
+				&__arrow__iconset__icon {
+					svg {
+						height: 4rem;
+						width: auto;
+					}
+					margin: 6rem 3rem !important;
+					margin-left: 0px !important;
+				}
+				&__iconset__icon {
+					svg {
+						width: 4rem;
+						height: auto;
+					}
+					margin: 0 1.5rem;
+				}
+				h6 {
+					font-size: 3.6rem;
+					line-height: 3.6rem;
+					margin-top: 0;
+					margin-bottom: 1rem;
+					color: inherit;
+					font-weight: 500;
+				}
+				> figure {
+					margin: 0 1rem 0 0;
+				}
+				&__challenge,
+				&__solution {
+					flex: 1;
+					min-width: 45%;
+					max-width: 45%;
+
+					p {
+						white-space: pre-wrap;
+						white-space: -moz-pre-wrap;
+						white-space: -o-pre-wrap;
+						word-wrap: break-word;
+						overflow-wrap: break-word;
+						flex-wrap: wrap;
+						padding-right: 3.1rem;
+					}
+				}
+				&__challenge {
+					//min-width: 45%;
+					//max-width: 45%;
+					p {
+						white-space: pre-wrap;
+						white-space: -moz-pre-wrap;
+						white-space: -o-pre-wrap;
+						word-wrap: break-word;
+						overflow-wrap: break-word;
+						flex-wrap: wrap;
+					}
+					h6 {
+						font-style: italic;
+					}
+				}
+			}
+		}
+	}
+	@media (max-width: 926px) {
+		&__container {
+			padding: 1rem;
+		}
+	}
+	@media (max-width: 767px) {
+		&__content {
+			width: calc(100% - 2rem);
+			height: auto;
+			margin: 1rem;
+			padding: 1rem;
+			&__heading {
+				font-size: 2.2rem;
+				margin-bottom: 1.6rem;
+			}
+			&__items {
+				&__item {
+					font-size: 1.6rem;
+					flex-wrap: wrap;
+					margin-bottom: 1rem;
+					&__challenge,
+					&__solution {
+						max-width: 100%;
+						flex: none;
+						width: calc( 100% - 2rem );
+						p {
+							margin: 0;
+						}
+					}
+					h6 {
+						font-size: 2.2rem;
+						margin-bottom: 0;
+					}
+					&__arrow__iconset__icon {
+						//display: none;
+						margin: 1rem !important;
+						transform: rotate(90deg);
+
+						svg {
+							height: 2rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}

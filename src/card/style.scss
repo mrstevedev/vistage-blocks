@@ -1,0 +1,57 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+.cards-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.wp-block-vistage-blocks-card-block .card {
+	--margin: 1.4rem;
+	--modifier: calc( 80rem - 100% );
+	border-radius: 4px 4px 0 0;
+	display: flex;
+	flex-basis: calc( var(--modifier) * 999 );
+	flex-direction: column;
+	flex-grow: 1;
+	flex-wrap: wrap;
+	margin: var(--margin);
+	min-width: calc(33% - (var(--margin) * 2));
+	overflow: hidden;
+
+	.card__image {
+		display: flex;
+		height: 36rem;
+		
+		img {
+			object-fit: cover;
+			object-position: center;
+		}
+	}
+
+	.card__content {
+		border: 2px solid #ccc;
+		border-top: 0;
+		border-radius: 0 0 4px 4px;
+	}
+
+	&.teaser {
+
+		border-radius: 0;
+
+		.card__image {
+			height: 22.4rem;
+		}
+
+		.card__content{
+			border: 0;
+		}
+
+		.card__body {
+			display: none;
+		}
+	}
+}

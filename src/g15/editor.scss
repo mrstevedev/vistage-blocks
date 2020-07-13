@@ -1,0 +1,28 @@
+.g15__container {
+	.g15__icon {
+		> div {
+			text-align: center;
+			figure {
+				display: inline-block;
+				svg {
+					width: 5.8rem;
+					height: 5.8rem;
+				}
+			}
+		}
+	}
+
+    .g15__testimonial-icon {
+		display: block;
+		margin: auto;
+	}
+
+    .editor-block-toolbar {
+        .components-toolbar {
+            display: none;
+        }
+        .components-toolbar:nth-child(3) {
+            display: flex;
+        }
+    }
+}

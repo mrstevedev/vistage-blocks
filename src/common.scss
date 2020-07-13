@@ -1,0 +1,37 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+
+@import 'includes/_media-queries',
+		'includes/_colors',
+		'includes/_buttons';
+
+
+html {
+	// 10px here sets the baseline for rem units used everywhere else.
+	// 1 rem = 10px, 1.5rem = 15px, etc.
+	font-size: 10px;
+}
+
+body.block-editor-page {
+	font-size: 1.5rem;
+}
+
+.wp-block {
+	width: 100%;
+	max-width: 1170px;
+}
+.editor-block-list__layout {
+	overflow-x: hidden;
+}
+
+// "Lobotomized Owl" technique
+// https://alistapart.com/article/axiomatic-css-and-lobotomized-owls/
+div[class^='wp-block-'] {
+	+ div[class^='wp-block'] {
+		margin-top: 6rem;
+	}
+}

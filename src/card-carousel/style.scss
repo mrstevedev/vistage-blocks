@@ -1,0 +1,113 @@
+.card-carousel {
+    &__container {
+        padding: 6rem 0 3.2rem 0;
+        position: relative;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+	&__heading,
+    &__heading input.components-text-control__input {
+        margin: 0;
+        margin-bottom: 4.8rem;
+        text-align: left;
+        font-weight: 500 ! important;
+        line-height: 5.6rem;
+        text-transform: none;
+    }
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -1.4rem;
+        width: calc( 100% + 4.2rem);
+        &__card {
+            position: relative;
+            text-decoration: none;
+            color: inherit;
+            margin: 0 1.4rem;
+            border-radius: 6px;
+            border: solid 2px #f2f1f1;
+            padding: 2.4rem;
+            width: calc( 33% - 2.8rem );
+            &__image {
+                margin: -2.4rem -2.4rem 1.6rem -2.4rem;
+                overflow: hidden;
+                img {
+                    min-width: 100%;
+                }
+            }
+            &__heading,
+            &__heading input.components-text-control__input {
+                margin: 0 0 0.8rem 0;
+                font-weight: 600;
+                color: #003f5f;
+            }
+            &__description {
+                line-height: 2.8rem;
+                margin: 0;
+            }
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+            .iconset__icon {
+                bottom: 0;
+                position: absolute;
+                display: inline-block;
+                margin: 0;
+                left: 50%;
+                transform: translate( -50%, 50%);
+            }
+            &.card-carousel__hidden {
+                display: none;
+            }
+            @include media('<=tablet') {
+                &.card-carousel__hidden-mobile {
+                    display: none;
+                }
+            }
+        }
+        &__arrow {
+            top: 50%;
+            position: absolute;
+            opacity: 0;
+            transition: opacity .3s;
+            &__right {
+                right: 0;
+            }
+            &__left {
+                left: 0;
+            }
+        }
+        &:hover {
+            .card-carousel__cards__arrow {
+                opacity: 1;
+            }
+        }
+
+    }
+    @include media('>tablet') {
+        &__mobile-only {
+            display: none;
+        }
+        // card-carousel__cards__3-cards
+        &__cards {
+            &__3-cards {
+                .card-carousel__cards__arrow {
+                    display: none;
+                }
+            }
+        }
+    }
+    @include media('<=tablet') {
+        &__desktop-only {
+            display: none;
+        }
+        &__cards {
+            > div {
+                width: 100%;
+                margin-bottom: 4.4rem;
+            }
+        }
+    }
+}
+// card-carousel__cards__arrow

@@ -1,0 +1,105 @@
+.g12sub {
+    &__left-text {
+        font-size: 1.4rem;
+        font-weight: 600;
+        display: inline-block;
+        margin: 1rem 0;
+        margin-right: 0.8rem;
+    }
+    &__buttons {
+
+        display: inline;
+
+        a {
+            display: inline-block;
+            margin: 1rem 0;
+            margin-right: 0.8rem;
+        }
+        &__button {
+
+            color: #003f5f;
+            background-color: white;
+            font-family: inherit;
+            position: relative;
+    
+            &:hover,
+            &:hover input {
+                color: white ! important;
+                border-color: #0079b6;
+                background-color: #003f5f;
+            }
+        }
+    }
+    &__dropdown {
+
+        display: block;
+        position: relative;
+		border: 1px solid rgba(0, 0, 0, .15);
+
+        &__toggle-button {
+
+            color: #003f5f;
+            background-color: white;
+            font-family: inherit;
+            position: relative;
+            width: 100%;
+    
+            &:hover {
+
+                color: white;
+                border-color: #0079b6;
+                background-color: #003f5f;
+
+                svg path {
+                    fill: #fff;
+                }
+            }
+            svg {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 1.6rem;
+            }
+        }
+        &__items {
+
+            background-color: #fff;
+            position: absolute;
+            width: 100%;
+            z-index: 1;
+            display: none;
+
+            &.active {
+                display: block;
+            }
+
+            &__button {
+
+                font-family: inherit;
+                color: #003f5f;
+                background-color: transparent;
+                border: none;
+                width: 100%;
+
+                &:hover {
+                    background-color: #ececec;
+                }
+            }
+            a {
+                display: block;
+                margin: 0;
+                margin-right: 0;
+            }
+        }
+	}		
+	@include media('>tablet') {
+		&__mobile_only {
+			display: none;
+		}
+	}
+	@include media('<=tablet') {
+		&__desktop_only {
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,231 @@
+.g24b__container {
+    background: #fff;
+    width: 100%;
+    min-height: 70rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.g24b_column-left, 
+.g24b_column-right {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    padding: 0 5em;
+}
+.g24b__right__cta-main-cta {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 56px;
+    margin: 0 0 32px 0;
+}
+
+.g24b__right__cta-subheading {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 40px;
+    margin: 0 0 0px 0;
+}
+
+.g24b__right__cta-subheading-right {
+    width: 335px;
+    position: relative;
+    overflow: hidden;
+}
+
+.g24b__right__cta-description {
+    font-size: .9em;
+    line-height: 28px;
+}
+
+.g24b__seperator {
+    border: 1px solid #003f5f;
+    height: 465px;
+}
+
+.g24b_column-right-outside {
+    position: relative;
+    max-width: 395px;
+}
+
+.g24b_column-right-outside h3::after {
+    content: '';
+    width: 61px;
+    height: 2px;
+    display: block;
+    background: #edc11c;
+    position: absolute;
+    right: 0;
+    top: 24px;
+    bottom: 0;  
+}
+
+.g24b__right__cta-list.checklist {
+    line-height: 28px;
+    width: 350px;
+    margin: 20px 0 15px -40px;
+    list-style: none;
+    li {
+        text-indent: -2.4em;
+        padding-left: 0;
+        list-style-position: outside;
+        margin: 8px 0;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            transform: rotate(45deg);
+            width: 7px;
+            height: 12px;
+            border-width: 0 0px 0 0;
+            border-bottom: 2px solid #edc11c;
+            border-right: 2px solid #edc11c;
+            margin: 0em 1em;
+            position: relative;
+            top: -2px;
+        }
+    }
+}
+
+.g24b__right__cta-list.numberlist {
+    line-height: 28px;
+    width: 350px;
+    margin: 20px 0 15px -40px;
+
+    li {
+        text-indent: -2.4em;
+        padding-left: 0;
+        list-style-position: outside;
+        margin: 8px 0;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            transform: rotate(45deg);
+            width: 7px;
+            height: 12px;
+            border-width: 0 0px 0 0;
+         
+            margin: 0em 1em;
+            position: relative;
+            top: -2px;
+        }
+    }
+}
+
+.g24b__right__cta-list.nolist {
+    line-height: 28px;
+    width: 350px;
+    margin: 20px 0 15px -40px;
+    list-style: none;
+
+    li {
+        padding-left: 0;
+        list-style-position: outside;
+        margin: 8px 0;
+    }
+}
+
+.arrow-right {
+    position: absolute;
+    right: 33px;
+    top: 27px;
+}
+
+
+.button__cta {
+    text-decoration: none;
+}
+
+.button__cta:hover {
+    border: solid 2px;
+}
+
+@include media('<=tablet') {
+    
+    .g24b__container {        
+        width: 100%;
+        height: initial;
+        display: initial;
+        margin: 15px 0;
+    }
+    
+    .g24b__right__cta-main-cta {
+        font-size: 35px;
+        line-height: 36px;
+    }
+    
+    .g24b__right__cta-subheading {
+        font-size: 30px;
+        line-height: 32px;
+        margin: 0 0 24px 0;
+        display: flex;
+        align-items: center;
+		justify-content: flex-start;
+    }
+    
+    .g24b__seperator {
+        height: 1px;
+        width: 85%;
+        margin: 0 auto;
+    }
+    
+    .g24b_column-left, .g24b_column-right {
+        display: block;
+        width: initial;
+        padding: 2em 2em;
+    }
+    
+    .g24b__right__cta-list {
+        line-height: 28px;
+        width: initial!important;
+        margin: 0 0 40px -10px!important;
+        font-size: 17px;
+    }
+    
+    .g24b__right__cta-button {
+        width: 100%;
+    }
+
+    .g24b__right__cta-main-cta {
+        font-size: 25px;
+        line-height: 28px;
+    }
+    
+    .g24b__right__cta-subheading {
+        font-size: 22px;
+        line-height: 26px;
+    }
+    
+    .g24b_column-right-outside h3:after {
+        right: -10px;
+        top: 12px;
+        bottom: 0;
+    }
+}
+
+@include media('<=phone') {
+    .g24b__right__cta-subheading-right h3:after {
+        width: 40px;   
+        right: 70px; 
+        margin: 1px 0;   
+    }
+
+    .g24b_column-right-outside h3:after {
+        right: -10px;
+        top: 12px;
+        bottom: 0;        
+    }
+}
+
+
+
+@media(max-width: 320px) {
+    .g24b_column-right-outside h3:after {
+        right: -15px;
+        top: 14px;
+        bottom: 0;
+        width: 40px;
+    }
+}

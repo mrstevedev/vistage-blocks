@@ -1,0 +1,77 @@
+.g210__container {
+	--offset: 15rem;
+
+	@include media('<laptop') {
+		--offset: 8rem;
+	}
+}
+
+.g210 {
+	&__container {
+		background: themeColor('vistage', 'light-blue');
+		margin-top: calc( 6rem + var(--offset) );
+	}
+
+	&__wrapper {
+		display: flex;
+		margin: 0 auto;
+		padding: 0 0 15rem;
+
+		@include media('<laptop') {
+			flex-direction: column;
+			padding: 0;
+		}
+	}
+
+	&__image {
+		display: flex;
+		width: 50%;
+		max-width: 80rem;
+		margin-top: calc( -1 * var(--offset) );
+
+		@include media('<laptop') {
+			order: 1;
+			width: calc(100% - 6.5rem);
+			margin-right: 0;
+			margin-left: auto;
+		}
+
+		figure {
+			margin: 0;
+			display: flex;
+			overflow: hidden;
+
+			img {
+				max-width: none;
+			}
+		}
+	}
+
+	&__text {
+		max-width: 35rem;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-self: center;
+		margin-top: 14rem;
+
+		@include media('<laptop') {
+			max-width: 100%;
+			margin: 4rem 2rem;
+			order: 2;
+		}
+
+		&__heading,
+		&__heading textarea {
+			font-size: 5rem;
+			font-weight: 500;
+			text-transform: none;
+			margin: 0;
+		}
+		&__description,
+		&__description textarea {
+			font-size: 2rem;
+			color: #343434;
+		}
+	}
+}
